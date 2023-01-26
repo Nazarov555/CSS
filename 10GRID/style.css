@@ -1,0 +1,19 @@
+/*
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 250px 200px 150px;
+
+    grid-template-rows: repeat(3, 250px);
+
+    grid-auto-columns: minmax(150px, auto);
+    grid-auto-rows: minmax(200px, auto);
+    
+    grid-gap: 20px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+
+*/

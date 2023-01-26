@@ -1,0 +1,29 @@
+/* 
+    display: flex;
+
+    flex-direction: column; |||
+    justify-content: y; основная ось
+    align-items: x;
+
+    flex-direction: row; ---
+    justify-content(-self, -items): x; основная ось
+    align-items: y;
+
+    justify-content: space-between; 
+                     space-around; 
+                     space-evenly;
+
+    align-items: flex-start;
+                 center;
+                 flex-end;
+
+    flex-wrap: wrap;
+               wrapreverse;
+               nowrap;
+
+    flex: 1 1 10%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 10%;
+
+*/
