@@ -10,10 +10,24 @@ a {
     color: #fff;
 }
 
+.github {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.tel-link {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 li {
     list-style: none;
 }
 
+.skills-list li {
+    list-style-type: square;
+}
 header {
     display: flex;
     background-color: black;
@@ -25,62 +39,99 @@ header {
 }
 
 .sidebar-wrapper {
-    margin-top: 2.3rem;
     background-color: black;
+
     width: 15rem;
-    height: 95vh;
+    height: 100%;
+
     position: fixed;
-    left: -20rem;
-    transition: .5s;
+    top: 2.3rem;
+    left: 0;
+
+    overflow: auto;
 }
-.sidebar-wrapper.open {
-   left: 0;
-}
+
 .sidebar-items {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+
+    padding: 2rem 0;
 }
 
 .sidebar-items li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem 0;
+
+    padding: .5rem 0;
+    margin: .5rem 0;
+
     width: 13rem;
     height: 3rem;
-    cursor: pointer;
+
+    cursor: pointer; 
 }
+
 .sidebar-items li:hover {
     background-color: blue;
     border-radius: 1rem;
 }
 
 .menu_button img {
+    display: none;
     padding: 0 2rem;
     height: 2rem;
     cursor: pointer;
 }
 
 .close_button img {
+    display: none;
     position: absolute;
     left: 13rem;
     top: 1rem;
     cursor: pointer;
 }
 main {
-    padding: 5rem 5rem;
+    margin-left: 15rem;
+    padding: 5rem 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
 }
+
+main h1 {
+    text-align: center;
+}
+
+@media (max-width: 1050px) {
+    main {
+        padding: 5rem 3rem;
+        margin-left: 0;
+    }
+
+    .menu_button img {
+        display: block;
+    }
+    .close_button img {
+        display: block;
+    }
+
+    .sidebar-wrapper {
+        left: -100%;
+    }
+    .sidebar-wrapper.open {
+        left: 0;
+    }
+}
+
 
 @media (max-width: 550px){
     main {
         padding: 5rem 1.5rem;
+    }
+    .meme-gif {
+        width: 300px;
+        height: 300px;
     }
 }
