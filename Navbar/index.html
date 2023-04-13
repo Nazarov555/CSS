@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with two navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div class="Logo">
+            <a href="#" class="logo">Logo</a>
+        </div>
+
+        <ul class="nav-lists">
+            <li class="nav-list"><a href="#">Home</a></li>
+            <li class="nav-list"><a href="#">About</a></li>
+            <li class="nav-list"><a href="#">Services</a></li>
+            <li class="nav-list"><a href="#">Support</a></li>
+            <li class="nav-list"><a href="#">Contacts</a></li>
+        </ul>
+
+        <div class="buttons-container">
+            <button>SignUp</button>
+            <button>Login</button>
+        </div>
+
+        <div class="small-screen-nav">
+            <button class="btn">
+                <img class="menu-btn" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_f7KX8S6_I8gyjl-1yFP8Fxd7JifY3HzZM2Zmwf-iNQ&s" alt="menu icon">
+            </button>
+           
+
+            <div class="small-screen-nav_content">
+                <button class="btn">
+                    <img class="close-btn" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1HcI9DnRvIZ66VeCJ47lugM-YvWY3SuxAmZ52uFuObw&s" alt="close menu">
+                </button>
+               
+                <div class="small-screen-nav_lists--wrapper">
+                    <ul class="small-screen-nav_lists">
+                        <li class="nav-list"><a href="#">Home</a></li>
+                        <li class="nav-list"><a href="#">About</a></li>
+                        <li class="nav-list"><a href="#">Services</a></li>
+                        <li class="nav-list"><a href="#">Support</a></li>
+                        <li class="nav-list"><a href="#">Contacts</a></li>
+                    </ul>
+                    <ul class="small-screen-nav_lists">
+                        <li class="nav-list"><a href="#">Hello</a></li>
+                        <li class="nav-list"><a href="#">Programms</a></li>
+                        <li class="nav-list"><a href="#">Donation</a></li>
+                        <li class="nav-list"><a href="#">Support</a></li>
+                        <li class="nav-list"><a href="#">Contacts</a></li>
+                    </ul>
+                    <ul class="small-screen-nav_lists">
+                        <li class="nav-list"><a href="#">Hello</a></li>
+                        <li class="nav-list"><a href="#">Programms</a></li>
+                        <li class="nav-list"><a href="#">Donation</a></li>
+                        <li class="nav-list"><a href="#">Support</a></li>
+                        <li class="nav-list"><a href="#">Contacts</a></li>
+                    </ul>
+
+                </div>
+        
+                <div class="small-screen-buttons_container">
+                    <button>SignUp</button>
+                    <button>Login</button>
+                </div>
+
+
+            </div>
+       
+        </div>
+    </header>
+    <main>
+        <h1>Welcome to website</h1>
+        <p>I congratulate you that you managed to enter the site</p>
+        <button>Buy</button>
+        <button>Sell</button>
+    </main>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const closeBtn = document.querySelector('.close-btn');
+        let navbar = document.querySelector('.small-screen-nav_content');
+        
+        closeBtn.addEventListener('click', ()=>{
+            navbar.classList.remove('active');
+        });
+        menuBtn.addEventListener('click', ()=>{
+            navbar.classList.add('active');
+        });
+
+       
+
+    </script>
+</body>
+</html>
